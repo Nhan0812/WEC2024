@@ -1,0 +1,754 @@
+*------------------------------------------------------------*
+User:                ACER
+Date:                May 11, 2024
+Time:                18:45:35
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          21
+TARGET     INTERVAL           1
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type               Variable                      Label
+ 
+TARGET       percent_vaccinated
+PREDICTED    P_percent_vaccinated    Predicted: percent_vaccinated
+RESIDUAL     R_percent_vaccinated    Residual: percent_vaccinated
+ 
+ 
+ 
+ 
+ 
+The DMREG Procedure
+ 
+               Model Information
+ 
+Training Data Set             WORK.EM_DMREG.VIEW
+DMDB Catalog                  WORK.REG2_DMDB
+Target Variable               percent_vaccinated
+Target Measurement Level      Interval
+Error                         Normal
+Link Function                 Identity
+Number of Model Parameters    22
+Number of Observations        982
+ 
+ 
+ 
+ 
+Stepwise Selection Procedure
+ 
+ 
+Step 0: Intercept entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   0               0               .        .       .
+Error                 981           60726       61.902623
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.0000     Adj R-Sq        0.0000
+AIC          4052.3019     BIC          4052.5260
+SBC          4057.1915     C(p)         1286.6257
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     51.8089      0.2511     206.35      <.0001
+ 
+ 
+Step 1: Effect revenues_per_capita_PIT entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   1           19939           19939     479.09    <.0001
+Error                 980           40787       41.619458
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.3283     Adj R-Sq        0.3277
+AIC          3663.4515     BIC          3663.7797
+SBC          3673.2307     C(p)          544.3842
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     42.0964      0.4892      86.06      <.0001
+revenues_per_capita_PIT              1      0.0127    0.000582      21.89      <.0001
+ 
+ 
+Step 2: Effect forests_area entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   2           26168           13084     370.65    <.0001
+Error                 979           34559       35.299915
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.4309     Adj R-Sq        0.4298
+AIC          3502.7261     BIC          3503.1799
+SBC          3517.3949     C(p)          313.9061
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     45.8121      0.5303      86.39      <.0001
+forests_area                         1    -0.00298    0.000224     -13.28      <.0001
+revenues_per_capita_PIT              1      0.0109    0.000554      19.68      <.0001
+ 
+ 
+Step 3: Effect persons_per_appartment entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   3           29758     9919.454954     313.27    <.0001
+Error                 978           30968       31.664732
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.4900     Adj R-Sq        0.4885
+AIC          3397.0017     BIC          3397.7529
+SBC          3416.5600     C(p)          181.8898
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     60.1759      1.4394      41.81      <.0001
+forests_area                         1    -0.00290    0.000213     -13.65      <.0001
+persons_per_appartment               1     -4.4346      0.4165     -10.65      <.0001
+revenues_per_capita_PIT              1     0.00933    0.000545      17.14      <.0001
+ 
+ 
+Step 4: Effect installations_network_gas entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   4           30696     7674.006315     249.66    <.0001
+Error                 977           30030       30.737408
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5055     Adj R-Sq        0.5035
+AIC          3368.8090     BIC          3369.5392
+SBC          3393.2570     C(p)          148.8915
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     59.7485      1.4202      42.07      <.0001
+forests_area                         1    -0.00303    0.000211     -14.37      <.0001
+installations_network_gas            1     -0.0355     0.00642      -5.52      <.0001
+persons_per_appartment               1     -4.3000      0.4110     -10.46      <.0001
+revenues_per_capita_PIT              1      0.0108    0.000598      18.04      <.0001
+ 
+ 
+Step 5: Effect installations_central_heating entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   5           31925     6385.069099     216.37    <.0001
+Error                 976           28801       29.509352
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5257     Adj R-Sq        0.5233
+AIC          3329.7641     BIC          3330.7109
+SBC          3359.1016     C(p)          105.0069
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     49.1034      2.1579      22.75      <.0001
+forests_area                         1    -0.00250    0.000222     -11.24      <.0001
+installations_central_heating        1      0.1804      0.0280       6.45      <.0001
+installations_network_gas            1     -0.0449     0.00646      -6.96      <.0001
+persons_per_appartment               1     -5.1268      0.4226     -12.13      <.0001
+revenues_per_capita_PIT              1     0.00925    0.000634      14.59      <.0001
+ 
+ 
+Step 6: Effect unemployment_rate_m entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   6           32411     5401.800107     186.00    <.0001
+Error                 975           28316       29.041715
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5337     Adj R-Sq        0.5308
+AIC          3315.0710     BIC          3316.0690
+SBC          3349.2981     C(p)           88.8872
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     52.5767      2.3032      22.83      <.0001
+forests_area                         1    -0.00241    0.000221     -10.90      <.0001
+installations_central_heating        1      0.1780      0.0277       6.42      <.0001
+installations_network_gas            1     -0.0432     0.00642      -6.73      <.0001
+persons_per_appartment               1     -5.5500      0.4318     -12.85      <.0001
+revenues_per_capita_PIT              1     0.00835    0.000666      12.55      <.0001
+unemployment_rate_m                  1     -0.3062      0.0749      -4.09      <.0001
+ 
+ 
+Step 7: Effect persons_per_room entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   7           32957     4708.159183     165.14    <.0001
+Error                 974           27769       28.510635
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5427     Adj R-Sq        0.5394
+AIC          3297.9394     BIC          3299.0927
+SBC          3337.0562     C(p)           70.4960
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     48.1972      2.4917      19.34      <.0001
+forests_area                         1    -0.00233    0.000220     -10.60      <.0001
+installations_central_heating        1      0.1549      0.0280       5.53      <.0001
+installations_network_gas            1     -0.0467     0.00641      -7.28      <.0001
+persons_per_appartment               1     -7.5810      0.6311     -12.01      <.0001
+persons_per_room                     1     16.9550      3.8733       4.38      <.0001
+revenues_per_capita_PIT              1     0.00958    0.000716      13.37      <.0001
+unemployment_rate_m                  1     -0.3801      0.0761      -4.99      <.0001
+ 
+ 
+Step 8: Effect population_density entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   8           33521     4190.113046     149.86    <.0001
+Error                 973           27206       27.960502
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5520     Adj R-Sq        0.5483
+AIC          3279.7971     BIC          3281.2020
+SBC          3323.8034     C(p)           51.4524
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     46.1162      2.5107      18.37      <.0001
+forests_area                         1    -0.00228    0.000218     -10.42      <.0001
+installations_central_heating        1      0.1891      0.0287       6.58      <.0001
+installations_network_gas            1     -0.0384     0.00661      -5.81      <.0001
+persons_per_appartment               1     -8.9559      0.6960     -12.87      <.0001
+persons_per_room                     1     21.7670      3.9826       5.47      <.0001
+population_density                   1    -0.00258    0.000575      -4.49      <.0001
+revenues_per_capita_PIT              1      0.0101    0.000720      14.07      <.0001
+unemployment_rate_m                  1     -0.3827      0.0754      -5.08      <.0001
+ 
+ 
+Step 9: Effect entities_registered_per_10k_pers entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   9           33888     3765.297306     136.36    <.0001
+Error                 972           26839       27.611931
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5580     Adj R-Sq        0.5539
+AIC          3268.4682     BIC          3270.0729
+SBC          3317.3642     C(p)           39.7626
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     44.5086      2.5337      17.57      <.0001
+entities_registered_per_10k_pers     1     0.00202    0.000554       3.64      0.0003
+forests_area                         1    -0.00224    0.000217     -10.34      <.0001
+installations_central_heating        1      0.1615      0.0295       5.46      <.0001
+installations_network_gas            1     -0.0413     0.00662      -6.25      <.0001
+persons_per_appartment               1     -8.6610      0.6964     -12.44      <.0001
+persons_per_room                     1     24.1500      4.0114       6.02      <.0001
+population_density                   1    -0.00234    0.000575      -4.06      <.0001
+revenues_per_capita_PIT              1     0.00945    0.000739      12.79      <.0001
+unemployment_rate_m                  1     -0.3977      0.0750      -5.30      <.0001
+ 
+ 
+Step 10: Effect appartments_per_1000_persons entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  10           34313     3431.299478     126.14    <.0001
+Error                 971           26413       27.202346
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5650     Adj R-Sq        0.5606
+AIC          3254.7817     BIC          3256.6949
+SBC          3308.5672     C(p)           25.8875
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     74.0261      7.8771       9.40      <.0001
+appartments_per_1000_persons         1     -0.0392     0.00990      -3.95      <.0001
+entities_registered_per_10k_pers     1     0.00268    0.000575       4.67      <.0001
+forests_area                         1    -0.00215    0.000217      -9.93      <.0001
+installations_central_heating        1      0.1441      0.0297       4.86      <.0001
+installations_network_gas            1     -0.0398     0.00658      -6.05      <.0001
+persons_per_appartment               1    -13.2337      1.3472      -9.82      <.0001
+persons_per_room                     1     22.0410      4.0171       5.49      <.0001
+population_density                   1    -0.00195    0.000579      -3.36      0.0008
+revenues_per_capita_PIT              1     0.00896    0.000744      12.05      <.0001
+unemployment_rate_m                  1     -0.3997      0.0744      -5.37      <.0001
+ 
+ 
+Step 11: Effect installations_toilet entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  11           34453     3132.081301     115.63    <.0001
+Error                 970           26274       27.086164
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5673     Adj R-Sq        0.5624
+AIC          3251.5667     BIC          3253.5993
+SBC          3310.2418     C(p)           22.6657
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     69.1181      8.1515       8.48      <.0001
+appartments_per_1000_persons         1     -0.0380     0.00989      -3.84      0.0001
+entities_registered_per_10k_pers     1     0.00246    0.000582       4.22      <.0001
+forests_area                         1    -0.00205    0.000221      -9.31      <.0001
+installations_central_heating        1      0.0922      0.0374       2.47      0.0138
+installations_network_gas            1     -0.0408     0.00658      -6.21      <.0001
+installations_toilet                 1      0.0952      0.0419       2.27      0.0233
+persons_per_appartment               1    -13.4350      1.3473      -9.97      <.0001
+persons_per_room                     1     23.1658      4.0389       5.74      <.0001
+population_density                   1    -0.00198    0.000578      -3.42      0.0007
+revenues_per_capita_PIT              1     0.00882    0.000745      11.84      <.0001
+unemployment_rate_m                  1     -0.3911      0.0744      -5.26      <.0001
+ 
+ 
+Step 12: Effect installations_bathroom entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  12           34574     2881.154422     106.75    <.0001
+Error                 969           26153       26.989288
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5693     Adj R-Sq        0.5640
+AIC          3249.0353     BIC          3251.1910
+SBC          3312.6000     C(p)           20.1509
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     64.9770      8.3688       7.76      <.0001
+appartments_per_1000_persons         1     -0.0374     0.00988      -3.79      0.0002
+entities_registered_per_10k_pers     1     0.00252    0.000582       4.33      <.0001
+forests_area                         1    -0.00202    0.000221      -9.18      <.0001
+installations_bathroom               1     -0.2735      0.1292      -2.12      0.0345
+installations_central_heating        1      0.1085      0.0381       2.85      0.0045
+installations_network_gas            1     -0.0379     0.00672      -5.63      <.0001
+installations_toilet                 1      0.3887      0.1448       2.68      0.0074
+persons_per_appartment               1    -13.1863      1.3500      -9.77      <.0001
+persons_per_room                     1     21.8108      4.0822       5.34      <.0001
+population_density                   1    -0.00193    0.000578      -3.35      0.0009
+revenues_per_capita_PIT              1     0.00894    0.000746      11.99      <.0001
+unemployment_rate_m                  1     -0.3866      0.0743      -5.20      <.0001
+ 
+ 
+Step 13: Effect installations_watersupply entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  13           34702     2669.369184      99.29    <.0001
+Error                 968           26025       26.884993
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5714     Adj R-Sq        0.5657
+AIC          3246.2193     BIC          3248.5253
+SBC          3314.6736     C(p)           17.3753
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     74.4056      9.4045       7.91      <.0001
+appartments_per_1000_persons         1     -0.0352     0.00991      -3.55      0.0004
+entities_registered_per_10k_pers     1     0.00238    0.000584       4.08      <.0001
+forests_area                         1    -0.00204    0.000220      -9.24      <.0001
+installations_bathroom               1     -0.3063      0.1298      -2.36      0.0185
+installations_central_heating        1      0.1050      0.0381       2.76      0.0059
+installations_network_gas            1     -0.0371     0.00671      -5.53      <.0001
+installations_toilet                 1      0.4881      0.1515       3.22      0.0013
+installations_watersupply            1     -0.1646      0.0755      -2.18      0.0294
+persons_per_appartment               1    -12.9788      1.3507      -9.61      <.0001
+persons_per_room                     1     20.9440      4.0936       5.12      <.0001
+population_density                   1    -0.00193    0.000576      -3.35      0.0009
+revenues_per_capita_PIT              1     0.00883    0.000746      11.84      <.0001
+unemployment_rate_m                  1     -0.3994      0.0744      -5.37      <.0001
+ 
+ 
+NOTE: No (additional) effects met the 0.05 significance level for entry into the model.
+ 
+ 
+                           Summary of Stepwise Selection
+ 
+                         Effect                         Number
+    Step    Entered                               DF        In    F Value    Pr > F
+ 
+       1    revenues_per_capita_PIT                1         1     479.09    <.0001
+       2    forests_area                           1         2     176.44    <.0001
+       3    persons_per_appartment                 1         3     113.39    <.0001
+       4    installations_network_gas              1         4      30.51    <.0001
+       5    installations_central_heating          1         5      41.66    <.0001
+       6    unemployment_rate_m                    1         6      16.72    <.0001
+       7    persons_per_room                       1         7      19.16    <.0001
+       8    population_density                     1         8      20.16    <.0001
+       9    entities_registered_per_10k_pers       1         9      13.28    0.0003
+      10    appartments_per_1000_persons           1        10      15.64    <.0001
+      11    installations_toilet                   1        11       5.16    0.0233
+      12    installations_bathroom                 1        12       4.48    0.0345
+      13    installations_watersupply              1        13       4.76    0.0294
+ 
+ 
+The selected model is the model trained in the last step (Step 13). It consists of the following effects:
+ 
+Intercept  appartments_per_1000_persons  entities_registered_per_10k_pers  forests_area  installations_bathroom  installations_central_heating  installations_network_gas  installations_toilet  installations_watersupply  persons_per_appartment
+persons_per_room  population_density  revenues_per_capita_PIT  unemployment_rate_m
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                  13           34702     2669.369184      99.29    <.0001
+Error                 968           26025       26.884993
+Corrected Total       981           60726
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5714     Adj R-Sq        0.5657
+AIC          3246.2193     BIC          3248.5253
+SBC          3314.6736     C(p)           17.3753
+ 
+ 
+                      Analysis of Maximum Likelihood Estimates
+ 
+                                                      Standard
+Parameter                           DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept                            1     74.4056      9.4045       7.91      <.0001
+appartments_per_1000_persons         1     -0.0352     0.00991      -3.55      0.0004
+entities_registered_per_10k_pers     1     0.00238    0.000584       4.08      <.0001
+forests_area                         1    -0.00204    0.000220      -9.24      <.0001
+installations_bathroom               1     -0.3063      0.1298      -2.36      0.0185
+installations_central_heating        1      0.1050      0.0381       2.76      0.0059
+installations_network_gas            1     -0.0371     0.00671      -5.53      <.0001
+installations_toilet                 1      0.4881      0.1515       3.22      0.0013
+installations_watersupply            1     -0.1646      0.0755      -2.18      0.0294
+persons_per_appartment               1    -12.9788      1.3507      -9.61      <.0001
+persons_per_room                     1     20.9440      4.0936       5.12      <.0001
+population_density                   1    -0.00193    0.000576      -3.35      0.0009
+revenues_per_capita_PIT              1     0.00883    0.000746      11.84      <.0001
+unemployment_rate_m                  1     -0.3994      0.0744      -5.37      <.0001
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=percent_vaccinated Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                     Train    Validation        Test
+ 
+ _AIC_        Akaike's Information Criterion     3303.48          .            .
+ _ASE_        Average Squared Error                27.25        29.19        31.01
+ _AVERR_      Average Error Function               27.25        29.19        31.01
+ _DFE_        Degrees of Freedom for Error        977.00          .            .
+ _DFM_        Model Degrees of Freedom             14.00          .            .
+ _DFT_        Total Degrees of Freedom            991.00          .            .
+ _DIV_        Divisor for ASE                     991.00       743.00       743.00
+ _ERR_        Error Function                    27009.48     21690.84     23040.31
+ _FPE_        Final Prediction Error               28.04          .            .
+ _MAX_        Maximum Absolute Error               15.98        19.19        33.96
+ _MSE_        Mean Square Error                    27.65        29.19        31.01
+ _NOBS_       Sum of Frequencies                  991.00       743.00       743.00
+ _NW_         Number of Estimate Weights           14.00          .            .
+ _RASE_       Root Average Sum of Squares           5.22         5.40         5.57
+ _RFPE_       Root Final Prediction Error           5.29          .            .
+ _RMSE_       Root Mean Squared Error               5.26         5.40         5.57
+ _SBC_        Schwarz's Bayesian Criterion       3372.06          .            .
+ _SSE_        Sum of Squared Errors             27009.48     21690.84     23040.31
+ _SUMW_       Sum of Case Weights Times Freq      991.00       743.00       743.00
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=percent_vaccinated Target Label=' '
+ 
+           Number of       Mean        Mean
+Depth    Observations     Target    Predicted
+ 
+   5          50         63.1520     64.7120
+  10          50         59.7860     59.8638
+  15          49         58.2143     58.1812
+  20          50         55.9120     56.9759
+  25          49         55.5531     56.0378
+  30          50         55.5300     55.0544
+  35          49         53.6122     54.2721
+  40          50         54.3120     53.5339
+  45          49         53.3204     52.8442
+  50          58         54.6190     52.1034
+  55          42         52.0119     51.5583
+  60          49         52.2469     51.0024
+  65          50         53.0700     50.2632
+  70          49         49.8082     49.3697
+  75          50         48.5940     48.5030
+  80          49         48.6551     47.5703
+  85          50         45.4660     46.3756
+  90          49         42.6633     44.9000
+  95          50         41.9820     42.9463
+ 100          49         38.5388     39.7760
+ 
+ 
+Data Role=VALIDATE Target Variable=percent_vaccinated Target Label=' '
+ 
+           Number of       Mean        Mean
+Depth    Observations     Target    Predicted
+ 
+   5          38         64.5000     64.0207
+  10          37         59.2432     59.5490
+  15          37         58.7838     58.2719
+  20          37         57.3135     56.8717
+  25          37         53.5243     55.8879
+  30          37         55.2676     55.2488
+  35          38         54.7947     54.5559
+  40          37         52.9919     53.8447
+  45          37         53.2378     53.0276
+  50          37         53.2784     52.2697
+  55          37         54.3649     51.6586
+  60          37         50.2730     50.8507
+  65          37         50.4838     50.1977
+  70          38         50.5632     49.4413
+  75          37         49.6514     48.6713
+  80          37         49.3595     47.7862
+  85          37         46.7405     46.7150
+  90          37         44.8189     45.3443
+  95          37         43.4432     43.5875
+ 100          37         39.5243     40.1017
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=percent_vaccinated Target Label=' '
+ 
+   Range for          Mean        Mean        Number of      Model
+   Predicted         Target    Predicted    Observations     Score
+ 
+77.891 -  80.138    77.2000     80.1376            1        79.0145
+75.645 -  77.891    65.6000     76.8348            2        76.7683
+71.153 -  73.399    71.1500     72.4892            2        72.2758
+68.907 -  71.153    70.9000     70.8677            1        70.0296
+66.660 -  68.907    66.0600     67.6379            5        67.7834
+64.414 -  66.660    66.7500     65.4871            6        65.5372
+62.168 -  64.414    61.4286     63.2420           14        63.2910
+59.922 -  62.168    60.5548     60.9210           42        61.0448
+57.675 -  59.922    58.6722     58.6705           72        58.7985
+55.429 -  57.675    55.7212     56.4652          113        56.5523
+53.183 -  55.429    54.3971     54.2047          138        54.3061
+50.937 -  53.183    53.3022     52.0234          180        52.0599
+48.691 -  50.937    51.1575     49.8413          134        49.8137
+46.444 -  48.691    48.1039     47.6765          102        47.5674
+44.198 -  46.444    43.8194     45.5167           72        45.3212
+41.952 -  44.198    42.5278     43.2097           54        43.0750
+39.706 -  41.952    38.5484     41.0053           31        40.8288
+37.459 -  39.706    37.4944     38.9487           18        38.5826
+35.213 -  37.459    39.9250     35.9850            4        36.3363
+ 
+ 
+Data Role=VALIDATE Target Variable=percent_vaccinated Target Label=' '
+ 
+   Range for          Mean        Mean        Number of      Model
+   Predicted         Target    Predicted    Observations     Score
+ 
+73.768 -  76.060    73.0000     76.0596            1        74.9140
+66.894 -  69.186    67.8000     68.4484            4        68.0400
+64.603 -  66.894    64.5250     65.5834            8        65.7487
+62.312 -  64.603    63.7417     63.3534           12        63.4573
+60.020 -  62.312    62.3409     60.9748           22        61.1660
+57.729 -  60.020    58.5855     58.7582           62        58.8747
+55.438 -  57.729    55.7762     56.3528           84        56.5834
+53.146 -  55.438    54.2448     54.3756          116        54.2920
+50.855 -  53.146    52.9539     52.0530          115        52.0007
+48.564 -  50.855    50.3298     49.7510          124        49.7094
+46.272 -  48.564    48.5195     47.4155           82        47.4181
+43.981 -  46.272    44.1288     45.1191           52        45.1267
+41.690 -  43.981    42.7545     42.9755           33        42.8354
+39.398 -  41.690    40.5053     40.8779           19        40.5441
+37.107 -  39.398    37.7600     38.7923            5        38.2528
+34.816 -  37.107    35.0000     36.0446            1        35.9615
+32.524 -  34.816    37.8000     33.4161            1        33.6701
+30.233 -  32.524    38.5000     31.0996            2        31.3788
